@@ -7,7 +7,7 @@ body {
   background-color: black;
   background-image: url(../public/img/Stars.png);
   background-repeat: repeat;
-  animation: animatedBackground 240s linear infinite alternate;
+  animation: animatedBackground 180s linear infinite;
 }
 
 @keyframes animatedBackground {
@@ -15,7 +15,7 @@ body {
     background-position: 0 0;
   }
   to {
-    background-position: 100% 0;
+    background-position: 960px 0;
   }
 }
 
