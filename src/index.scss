@@ -1,0 +1,73 @@
+:root {
+  --pixel-green:            rgb(0,160,0);
+  --pixel-green-highlight:  rgb(116, 205, 0);
+  --pixel-green-hover:      rgb(136, 205, 0)
+}
+
+@font-face {
+  font-family: "Munro";
+  src: url(../public/Munro.ttf);
+}
+
+.App {
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  background-color: black;
+  background-image: url(../public/img/Stars.png);
+  background-repeat: repeat;
+  animation: animatedBackground 180s linear infinite;
+}
+
+@keyframes animatedBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 960px 0;
+  }
+}
+
+body {
+  margin: 0;
+  font-family: "Munro", sans-serif;
+  color: var(--pixel-green);
+  text-shadow: -3px 0 var(--pixel-green-highlight), 0 3px var(--pixel-green-highlight), 3px 0 green, 0 -3px var(--pixel-green-highlight);
+  letter-spacing: 4px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.button {
+  font-size: 4em;
+  cursor: pointer;
+  
+  &:hover {
+    font-size: 5em;
+  }
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.center {
+    top: 50%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+@keyframes zoomBackground {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 1000000% 0;
+  }
+}
+
+.zoom {
+  animation: zoomBackground .5s linear !important
+}
+
