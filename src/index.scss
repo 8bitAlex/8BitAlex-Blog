@@ -58,6 +58,11 @@ code {
     transform: translateY(-50%);
 }
 
+h1 {
+  font-size: 6em;
+  margin: 0;
+}
+
 @keyframes zoomBackground {
   from {
     background-position: 0 0;
