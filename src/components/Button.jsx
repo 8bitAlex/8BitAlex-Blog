@@ -9,7 +9,7 @@ export default class Button extends React.Component {
 
     render() {
         return (
-            <div className="button" {...this.props} onMouseOver={() =>  this.hightlight.play()} onClick={() => this.select.play()}>
+            <div className="button" {...this.props} onMouseOver={() =>  this.hightlight.play()} onClick={() => {this.select.play(); this.props.onClick?.();}}>
                 {this.props.children}
             </div>
         );

@@ -1,7 +1,8 @@
 import React from "react";
-import HomeScreen from "./routes/HomeScreen";
-import PressStartScreen from "./routes/PressStartScreen";
+import HomePage from "./routes/HomePage";
+import PressStartPage from "./routes/PressStartPage";
 import { Outlet, Route, Routes, useNavigate } from "react-router";
+import PageNotFound from "./routes/PageNotFound";
 
 // Router Top-Level Layout
 function Layout() {
@@ -34,13 +35,11 @@ class App extends React.Component {
       <div className={this.state.zoom ? "App zoom" : "App"}>
         <Routes>
           <Route path={"/"} element={<Layout />}>
-            <Route index element={<PressStartScreen onClick={() => {this.zoom("/home")}} />} />
-            <Route path={"/home"} element={<HomeScreen />} />
-            <Route path="*" element={<div>Nothing Here</div>} />
+            <Route index element={<PressStartPage onClick={() => {this.zoom("/home")}} />} />
+            <Route path={"/home"} element={<HomePage />} />
+            <Route path="*" element={<PageNotFound />} />
           </Route>
         </Routes>
-        {/* {this.state.screen === "start" ? <PressStart onClick={() => { this.setState({ screen: "home" }); this.zoom(); }} /> : null}
-        {this.state.screen === "home" && !this.state.zoom ? <HomeScreen /> : null} */}
       </div>
     );
   }
