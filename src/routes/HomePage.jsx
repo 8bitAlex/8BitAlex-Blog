@@ -7,7 +7,7 @@ export default class HomeScreen extends React.Component {
     constructor(){
         super();
         this.state = {
-            isMuted: false
+            hasSound: getSound()
         }
     }
 
@@ -16,8 +16,9 @@ export default class HomeScreen extends React.Component {
     }
 
     toggleSound() {
-        this.setState({isMuted:!this.state.isMuted});
-        setSound(!this.state.isMuted);
+        const hasSound = this.state.hasSound;
+        setSound(!hasSound);
+        this.setState({hasSound:!hasSound});
     }
 
     render() {
@@ -27,7 +28,7 @@ export default class HomeScreen extends React.Component {
                 <Button>Blog</Button>
 
                 <Button style={lowerRight} onClick={() => {window.open('https://www.linkedin.com/in/8bitalex/','_newtab');}}>LinkedIn</Button>
-                <Button style={lowerLeft} onClick={() => {this.toggleSound()}}>{this.state.isMuted ? '🔉' : '🔇'}</Button>
+                <Button style={lowerLeft} onClick={() => {this.toggleSound()}}><img src={this.state.hasSound ? '../img/Speaker.png' : '../img/SpeakerMuted.png'} width='64px' height='64px' alt={this.state.hasSound ? "Speaker Icon" : "Muted Speaker Icon"}/></Button>
             </div>
         );
     }
