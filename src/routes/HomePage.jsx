@@ -25,7 +25,7 @@ export default class HomeScreen extends React.Component {
         return (
             <div style={style}>
                 <h1 style={{paddingTop:'128px', paddingBottom:'48px'}}>Alex Salerno</h1>
-                <Button>Blog</Button>
+                <Button onClick={() => {window.location.assign('https://blog.alexsalerno.com')}}>Blog</Button>
 
                 <Button style={lowerRight} onClick={() => {window.open('https://www.linkedin.com/in/8bitalex/','_newtab');}}>LinkedIn</Button>
                 <Button style={lowerLeft} onClick={() => {this.toggleSound()}}><img src={this.state.hasSound ? '../img/Speaker.png' : '../img/SpeakerMuted.png'} width='64px' height='64px' alt={this.state.hasSound ? "Speaker Icon" : "Muted Speaker Icon"}/></Button>
