@@ -1,10 +1,23 @@
 import React from "react";
 import Button from "../components/Button";
+import { getSound, setSound } from "../utils";
 
 export default class HomeScreen extends React.Component {
 
+    constructor(){
+        super();
+        this.state = {
+            isMuted: false
+        }
+    }
+
     onClick() {
         this.props.onClick();
+    }
+
+    toggleSound() {
+        this.setState({isMuted:!this.state.isMuted});
+        setSound(!this.state.isMuted);
     }
 
     render() {
@@ -14,7 +27,7 @@ export default class HomeScreen extends React.Component {
                 <Button>Blog</Button>
 
                 <Button style={lowerRight} onClick={() => {window.open('https://www.linkedin.com/in/8bitalex/','_newtab');}}>LinkedIn</Button>
-                <Button style={lowerLeft}>🔉</Button>
+                <Button style={lowerLeft} onClick={() => {this.toggleSound()}}>{this.state.isMuted ? '🔉' : '🔇'}</Button>
             </div>
         );
     }

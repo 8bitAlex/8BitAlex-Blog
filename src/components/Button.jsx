@@ -1,4 +1,5 @@
 import React from "react";
+import { getSound } from "../utils";
 
 export default class Button extends React.Component {
 
@@ -7,9 +8,18 @@ export default class Button extends React.Component {
         this.select = new Audio("/sound/select.mp3");
     }
 
+    onHover() {
+        if(getSound()) this.hightlight.play();
+    }
+
+    onClick() {
+        if(getSound()) this.select.play(); 
+        this.props.onClick?.();
+    }
+
     render() {
         return (
-            <div className="button" {...this.props} onMouseOver={() =>  this.hightlight.play()} onClick={() => {this.select.play(); this.props.onClick?.();}}>
+            <div className="button" {...this.props} onMouseOver={() => {this.onHover()}} onClick={() => {this.onClick()}}>
                 {this.props.children}
             </div>
         );
