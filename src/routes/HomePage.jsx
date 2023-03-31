@@ -1,5 +1,6 @@
 import React from "react";
 import Button from "../components/Button";
+import SocialBar from "../components/SocialBar";
 import { getSound, setSound } from "../utils";
 
 export default class HomeScreen extends React.Component {
@@ -25,9 +26,9 @@ export default class HomeScreen extends React.Component {
         return (
             <div style={style}>
                 <h1 style={{paddingTop:'128px', paddingBottom:'48px'}}>Alex Salerno</h1>
-                <Button onClick={() => {window.location.assign('https://blog.alexsalerno.com')}}>Blog</Button>
-
-                <Button style={lowerRight} onClick={() => {window.open('https://www.linkedin.com/in/8bitalex/','_newtab');}}><img src="../img/linkedin_64.png" alt="LinkedIn icon"/></Button>
+                <Button onClick={() => {window.location.assign('https://blog.alexsalerno.com')}}><p>Blog</p></Button>
+                
+                <SocialBar style={lowerRight} />
                 <Button style={lowerLeft} onClick={() => {this.toggleSound()}}><img src={this.state.hasSound ? '../img/Speaker.png' : '../img/SpeakerMuted.png'} alt={this.state.hasSound ? "Speaker Icon" : "Muted Speaker Icon"}/></Button>
             </div>
         );

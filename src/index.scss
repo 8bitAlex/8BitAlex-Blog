@@ -39,10 +39,15 @@ body {
 }
 
 .button {
-  font-size: 4em;
+
   cursor: pointer;
   
-  &:hover {
+  P {
+    font-size: 4em;
+    margin: 0;
+  }
+  
+  p:hover {
     font-size: 5em;
   }
 
@@ -52,6 +57,7 @@ body {
   }
 
   img:hover {
+    font-size: 4em !important;
     width: 48px;
     height: 48px;
   }
@@ -74,7 +80,7 @@ h1 {
   margin: 0;
 }
 
-@keyframes zoomBackground {
+@keyframes zoomRight {
   from {
     background-position: 0 0;
   }
@@ -84,6 +90,6 @@ h1 {
 }
 
 .zoom {
-  animation: zoomBackground .5s linear !important
+  animation: zoomRight .5s linear !important
 }
 
