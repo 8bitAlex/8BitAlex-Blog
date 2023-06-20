@@ -2,8 +2,14 @@ import React from "react";
 import Button from "../components/Button";
 import SocialBar from "../components/SocialBar";
 import { getSound, setSound } from "../utils";
+import { Link } from "react-router-dom";
+import withHooks from "../components/withHooks";
 
-export default class HomeScreen extends React.Component {
+const menuItems = [
+    {title:'Blog', url: '/blog'}
+]
+
+class HomeScreen extends React.Component {
 
     constructor(){
         super();
@@ -26,7 +32,9 @@ export default class HomeScreen extends React.Component {
         return (
             <div style={style}>
                 <h1 style={{paddingTop:'128px', paddingBottom:'48px'}}>Alex Salerno</h1>
-                <Button onClick={() => {window.location.assign('http://blog.alexsalerno.com')}}><p>Blog</p></Button>
+                {menuItems.map(({title, url}) => {
+                    return <Button to={url}><p>{title}</p></Button>
+                })}
                 
                 <SocialBar style={lowerRight} />
                 <Button style={lowerLeft} onClick={() => {this.toggleSound()}}><img src={this.state.hasSound ? '../img/Speaker.png' : '../img/SpeakerMuted.png'} alt={this.state.hasSound ? "Speaker Icon" : "Muted Speaker Icon"}/></Button>
@@ -35,6 +43,8 @@ export default class HomeScreen extends React.Component {
     }
 
 }
+
+export default withHooks(HomeScreen);
 
 const style = {
     padding: '16px'

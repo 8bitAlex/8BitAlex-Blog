@@ -9,16 +9,6 @@
   src: url(../public/Munro.ttf);
 }
 
-.App {
-  height: 100vh;
-  width: 100vw;
-  text-align: center;
-  background-color: black;
-  background-image: url(../public/img/Stars.png);
-  background-repeat: repeat;
-  animation: animatedBackground 180s linear infinite;
-}
-
 @keyframes animatedBackground {
   from {
     background-position: 0 0;
@@ -28,7 +18,20 @@
   }
 }
 
+a {
+  color: var(--pixel-green);
+  text-decoration: none;
+  -webkit-tap-highlight-color: transparent;
+}
+
 body {
+  height: 100vh;
+  width: 100vw;
+  text-align: center;
+  background-color: black;
+  background-image: url(../public/img/Stars.png);
+  background-repeat: repeat;
+  animation: animatedBackground 180s linear infinite;
   margin: 0;
   font-family: "Munro", sans-serif;
   color: var(--pixel-green);
@@ -41,6 +44,8 @@ body {
 .button {
 
   cursor: pointer;
+  margin: auto;
+  width: fit-content;
   
   P {
     font-size: 4em;
@@ -65,8 +70,7 @@ body {
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
 
 .center {
@@ -92,4 +96,3 @@ h1 {
 .zoom {
   animation: zoomRight .5s linear !important
 }
-

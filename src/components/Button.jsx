@@ -1,7 +1,8 @@
 import React from "react";
-import { getSound } from "../utils";
+import { getSound, zoom } from "../utils";
+import withHooks from "./withHooks";
 
-export default class Button extends React.Component {
+class Button extends React.Component {
 
     componentDidMount() {
         this.hightlight = new Audio("/sound/hightlight.mp3");
@@ -15,6 +16,9 @@ export default class Button extends React.Component {
     onClick() {
         if(getSound() && navigator.userActivation.hasBeenActive) this.select.play(); 
         this.props.onClick?.();
+        if(this.props.to) {
+            zoom(this.props.to, this.props.navigate)
+        }
     }
 
     render() {
@@ -26,3 +30,5 @@ export default class Button extends React.Component {
     }
 
 }
+
+export default withHooks(Button);
