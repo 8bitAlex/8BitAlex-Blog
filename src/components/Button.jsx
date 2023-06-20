@@ -9,11 +9,11 @@ export default class Button extends React.Component {
     }
 
     onHover() {
-        if(getSound()) this.hightlight.play();
+        if(getSound() && navigator.userActivation.hasBeenActive) this.hightlight.play();
     }
 
     onClick() {
-        if(getSound()) this.select.play(); 
+        if(getSound() && navigator.userActivation.hasBeenActive) this.select.play(); 
         this.props.onClick?.();
     }
 
