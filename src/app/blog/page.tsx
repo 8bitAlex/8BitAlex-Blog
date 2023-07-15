@@ -16,7 +16,7 @@ export default function Page({ params }: IProps) {
     return (
         <div>
             <BackButton to="/home">Home</BackButton>
-            <div style={style}>
+            <div className="grid" style={style}>
                 {posts.map((post) => {
                     return (
                         <PostCard post={post} />
@@ -29,8 +29,6 @@ export default function Page({ params }: IProps) {
 }
 
 const style: CSSProperties = {
-    display: 'grid',
-    gridTemplateColumns: 'auto auto',
     marginTop: '8px'
 }
 
