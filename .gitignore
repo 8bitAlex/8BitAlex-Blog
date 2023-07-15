@@ -4,3 +4,4 @@ build/
 # environment
 node_modules/
 .vscode/
+.next/
