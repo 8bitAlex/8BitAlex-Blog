@@ -1,5 +1,5 @@
 1:HL["/_next/static/css/2a97e3356f3753e5.css",{"as":"style"}]
-0:["ei8QOIM35ilFDJ70GRXEc",[[["",{"children":["blog",{"children":[["slug","alderman-how-it-works","d"],{"children":["__PAGE__?{\"slug\":\"alderman-how-it-works\"}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/2a97e3356f3753e5.css","precedence":"next"}]],["$L3",null]]]]]
+0:["IXpFaox3qjGKZcToxc-NY",[[["",{"children":["blog",{"children":[["slug","alderman-how-it-works","d"],{"children":["__PAGE__?{\"slug\":\"alderman-how-it-works\"}",{}]}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/2a97e3356f3753e5.css","precedence":"next"}]],["$L3",null]]]]]
 4:HL["/_next/static/css/e469cf99f1be6d39.css",{"as":"style"}]
 5:I{"id":9180,"chunks":["272:static/chunks/webpack-efb56e384e97eaf6.js","253:static/chunks/bce60fc1-0a48502d20cadece.js","698:static/chunks/698-e3175ee4e379c24b.js"],"name":"default","async":false}
 6:I{"id":2306,"chunks":["272:static/chunks/webpack-efb56e384e97eaf6.js","253:static/chunks/bce60fc1-0a48502d20cadece.js","698:static/chunks/698-e3175ee4e379c24b.js"],"name":"default","async":false}
