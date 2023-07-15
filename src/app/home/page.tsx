@@ -7,6 +7,7 @@ import { CSSProperties, Dispatch, SetStateAction, useState } from "react"
 
 const menuItems = [
     { title: 'Blog', url: '/blog' },
+    { title: 'Code Examples', url: 'https://github.com/8bitAlex/alex-salerno-portfolio'},
     { title: 'Alderman RPG', url: 'https://aldermanrpg.com/'},
     { title: 'Pixelated Realms', url: 'https://www.pixelatedrealms.org/'}
 ]
