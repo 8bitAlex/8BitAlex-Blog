@@ -33,7 +33,8 @@ export default function Page() {
 }
 
 const style: CSSProperties = {
-    padding: '16px'
+    padding: '16px',
+    marginBottom: '96px'
 }
 
 const lowerRight: CSSProperties = {
