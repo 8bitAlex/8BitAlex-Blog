@@ -4,9 +4,11 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build; cp ./CNAME ./.next",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d .next"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
@@ -30,6 +32,7 @@
   },
   "devDependencies": {
     "@types/webpack-env": "^1.18.1",
+    "gh-pages": "^5.0.0",
     "sass": "^1.63.6"
   }
 }
