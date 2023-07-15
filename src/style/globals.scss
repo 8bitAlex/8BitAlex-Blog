@@ -1,12 +1,13 @@
 :root {
   --pixel-green:            rgb(0,160,0);
   --pixel-green-highlight:  rgb(116, 205, 0);
-  --pixel-green-hover:      rgb(136, 205, 0)
+  --pixel-green-hover:      rgb(136, 205, 0);
+  --star-wars-yellow:       rgb(255, 232, 31);
 }
 
 @font-face {
   font-family: "Munro";
-  src: url(../public/Munro.ttf);
+  src: url(../../public/Munro.ttf);
 }
 
 @keyframes animatedBackground {
@@ -29,7 +30,7 @@ body {
   width: 100vw;
   text-align: center;
   background-color: black;
-  background-image: url(../public/img/Stars.png);
+  background-image: url(../../public/img/Stars.png);
   background-repeat: repeat;
   animation: animatedBackground 180s linear infinite;
   margin: 0;
@@ -54,6 +55,7 @@ body {
   
   p:hover {
     font-size: 5em;
+    text-decoration: underline;
   }
 
   img {
