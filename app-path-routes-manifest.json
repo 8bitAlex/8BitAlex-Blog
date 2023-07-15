@@ -1,0 +1,7 @@
+{
+  "/favicon.ico/route": "/favicon.ico",
+  "/page": "/",
+  "/home/page": "/home",
+  "/blog/page": "/blog",
+  "/blog/[slug]/page": "/blog/[slug]"
+}
