@@ -5,23 +5,16 @@ import BackButton from "@/components/BackButton"
 import PostCard from "@/components/PostCard"
 import { CSSProperties } from "react"
 
-type IProps = {
-    params: {
-        slug: string
-    }
-}
-
-export default function Page({ params }: IProps) {
+export default function Page() {
     const posts = getPosts()
     return (
         <div>
             <BackButton to="/home">Home</BackButton>
             <div className="grid" style={style}>
-                {posts.map((post) => {
+                {posts.sort(comparePost).reverse().map((post) => {
                     return (
                         <PostCard post={post} />
                     )
-
                 })}
             </div>
         </div>
@@ -34,7 +27,7 @@ const style: CSSProperties = {
 
 // private
 
-function getPosts() {
+function getPosts(): PostType[] {
     // get all posts from posts directory
     const postsDirectory = path.join(process.cwd(), 'posts')
     const posts = fs.readdirSync(postsDirectory, { withFileTypes: true }).filter(value => value.name.endsWith(".md"))
@@ -54,6 +47,21 @@ function getPosts() {
             content: document.content
         }
     })
+}
+
+function comparePost(a: PostType, b: PostType): number {
+    if(a === b) return 0
+    const aDate = new Date(a.frontmatter.date)
+    const bDate = new Date(b.frontmatter.date)
+    return aDate > bDate ? 1 : -1
+}
+
+type PostType = {
+    slug: string,
+    frontmatter: {
+        [key: string]: any
+    },
+    content: string
 }
 
 

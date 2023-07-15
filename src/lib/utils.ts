@@ -17,3 +17,8 @@ export function zoom(url: string, router: AppRouterInstance): void {
         router.replace(url)
     }, 500)
 }
+
+export function playSelectSound() {
+    const select = new Audio("/sound/select.mp3")
+    if(!getStorageMute() && navigator.userActivation.hasBeenActive) select.play(); 
+}

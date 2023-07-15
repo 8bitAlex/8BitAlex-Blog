@@ -1,6 +1,6 @@
 'use client'
 
-import { zoom } from "@/lib/utils";
+import { playSelectSound, zoom } from "@/lib/utils";
 import { useRouter } from "next/navigation";
 import { CSSProperties } from "react";
 
@@ -18,6 +18,7 @@ export default function PostCard(props: IProps) {
     const router = useRouter()
 
     function onClick() {
+        playSelectSound()
         zoom('blog/'+props.post.slug, router)
     }
 

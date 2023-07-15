@@ -1,6 +1,6 @@
 'use client'
 
-import { getStorageMute, zoom } from "@/lib/utils";
+import { getStorageMute, playSelectSound, zoom } from "@/lib/utils";
 import { AppRouterInstance } from "next/dist/shared/lib/app-router-context";
 import { useRouter } from "next/navigation";
 import { CSSProperties, ReactNode } from "react"
@@ -30,10 +30,8 @@ function onHover(props: IProps) {
 }
 
 function onClick(props: IProps, router: AppRouterInstance) {
-    const select = new Audio("/sound/select.mp3")
-    
-    if(!getStorageMute() && navigator.userActivation.hasBeenActive) select.play(); 
-    props.onClick?.();
+    playSelectSound()
+    props.onClick?.()
     if(props.to) {
         zoom(props.to, router)
     }
