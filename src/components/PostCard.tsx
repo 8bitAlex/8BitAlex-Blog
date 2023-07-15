@@ -16,17 +16,18 @@ type IProps = {
 
 export default function PostCard(props: IProps) {
     const router = useRouter()
+    const date = new Date(props.post.frontmatter.date)
 
     function onClick() {
         playSelectSound()
         zoom('blog/'+props.post.slug, router)
     }
-
+    
     return (
         <div style={style} onClick={() => onClick()}>
             <div>
                 <h3>{props.post.frontmatter.title}</h3>
-                <h4>{props.post.frontmatter.date}</h4>
+                <h4>{date.toLocaleDateString()}</h4>
                 <p>{props.post.frontmatter.tagline}</p>
             </div>
         </div>

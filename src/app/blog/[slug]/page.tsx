@@ -11,13 +11,14 @@ type IProps = {
 
 export default function Page({ params }: IProps) {
   const post = getPost(params.slug)
+  const date = new Date(post.frontmatter.date)
   return (
     <div style={{ textAlign: 'left' }}>
       <BackButton to={'/blog'}>Back</BackButton>
       <div style={{paddingLeft:'32px', paddingRight:'32px'}}>
         <h2>{post.frontmatter.title}</h2>
         <h3>{post.frontmatter.tagline}</h3>
-        <h4>By Alex Salerno | {post.frontmatter.date}</h4>
+        <h4>By Alex Salerno | {date.toLocaleDateString()}</h4>
         <hr /><br />
         <p>{post.content.trim()}</p>
       </div>
