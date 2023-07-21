@@ -3,6 +3,13 @@
   --pixel-green-highlight:  rgb(116, 205, 0);
   --pixel-green-hover:      rgb(136, 205, 0);
   --star-wars-yellow:       rgb(255, 232, 31);
+  --snes-purple:            rgb(167, 164, 224);
+  --snes-dark-purple:       rgb(81, 70, 137);
+  --snes-grey:              rgb(178, 180, 178);
+  --snes-dark-grey:         rgb(84, 88, 90);
+  --snes-dark-grey-2:       rgb(112, 115, 114);
+  --blog-dark:              rgb(35, 39, 47);
+  --blog-light:             #363d49;
 }
 
 @font-face {
@@ -128,4 +135,30 @@ h1 {
   @media screen and (max-width: 600px) {
     grid-template-columns: auto;
   }
+}
+
+.window {
+  width: fit-content;
+  padding: 24px;
+  margin: auto;
+}
+
+.window-item {
+  background-color: var(--blog-dark);
+  border-color: var(--blog-light);
+  border-width: 8px;
+  border-style: solid;
+  border-radius: 4px;
+  box-shadow: 0px 0px 20px -10px var(--star-wars-yellow);
+  margin: 16px;
+  padding: 16px 64px;
+
+  @media screen and (max-width: 1400px) {
+    padding: 16px 32px;
+  }
+
+  @media screen and (max-width: 600px) {
+    padding: 16px 8px;
+  }
+
 }

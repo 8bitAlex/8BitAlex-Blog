@@ -7,9 +7,9 @@ import { CSSProperties, Dispatch, SetStateAction, useState } from "react"
 
 const menuItems = [
     { title: 'Blog', url: '/blog' },
-    { title: 'Code Examples', url: 'https://github.com/8bitAlex/alex-salerno-portfolio'},
     { title: 'Alderman RPG', url: 'https://aldermanrpg.com/'},
-    { title: 'Pixelated Realms Podcast', url: 'https://www.pixelatedrealms.org/'}
+    { title: 'Pixelated Realms Podcast', url: 'https://www.pixelatedrealms.org/'},
+    { title: 'Code Examples', url: 'https://github.com/8bitAlex/alex-salerno-portfolio'}
 ]
 
 export default function Page() {
@@ -23,9 +23,11 @@ export default function Page() {
     return (
         <div style={style}>
             <h1 style={{ paddingTop: '128px', paddingBottom: '24px' }}>Alex Salerno</h1>
-            {menuItems.map(({ title, url }) => {
-                return <Button to={url}><p>{title}</p></Button>
-            })}
+            <div className="window">
+                {menuItems.map(({ title, url }) => {
+                    return <div className="window-item"><Button to={url}><p>{title}</p></Button></div>
+                })}
+            </div>
             <SocialBar style={lowerRight} />
             <Button style={lowerLeft} onClick={() => onClick()}><img src={!mute ? '../img/Speaker.png' : '../img/SpeakerMuted.png'} alt={!mute ? "Speaker Icon" : "Muted Speaker Icon"} /></Button>
         </div>
