@@ -3,11 +3,14 @@ import { AppRouterInstance } from "next/dist/shared/lib/app-router-context"
 const SOUND_PREF = "mt"
 
 export function setStorageMute(mute: boolean): void {
-    localStorage.setItem(SOUND_PREF, mute ? 'true' : 'false')
+    if(typeof window !== undefined) localStorage.setItem(SOUND_PREF, mute ? 'true' : 'false')
 }
 
 export function getStorageMute(): boolean {
-    return localStorage.getItem(SOUND_PREF) === 'true' ? true : false
+    if(typeof window !== undefined) {
+        return localStorage.getItem(SOUND_PREF) === 'true' ? true : false
+    }
+    return false
 }
 
 export function zoom(url: string, router: AppRouterInstance): void {
@@ -20,5 +23,5 @@ export function zoom(url: string, router: AppRouterInstance): void {
 
 export function playSelectSound() {
     const select = new Audio("/sound/select.mp3")
-    if(!getStorageMute() && navigator.userActivation.hasBeenActive) select.play(); 
+    if(!getStorageMute() && (navigator as any).userActivation.hasBeenActive) select.play(); 
 }
