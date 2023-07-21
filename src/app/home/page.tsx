@@ -2,7 +2,7 @@
 
 import Button from "@/components/Button"
 import SocialBar from "@/components/SocialBar"
-import { setStorageMute } from "@/lib/utils"
+import { getStorageMute, setStorageMute } from "@/lib/utils"
 import { CSSProperties, Dispatch, SetStateAction, useState } from "react"
 
 const menuItems = [
@@ -13,7 +13,7 @@ const menuItems = [
 ]
 
 export default function Page() {
-    const [mute, setMute] = useState(false)
+    const [mute, setMute] = useState(getStorageMute())
 
     function onClick() {
         setStorageMute(!mute)
