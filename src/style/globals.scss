@@ -51,11 +51,29 @@ body {
   P {
     font-size: 4em;
     margin: 0;
+
+    @media screen and (max-width: 1400px) {
+      font-size: 3em;
+    }
+  
+    @media screen and (max-width: 600px) {
+      font-size: 2.5em;
+    }
+
   }
   
   p:hover {
     font-size: 5em;
     text-decoration: underline;
+
+    @media screen and (max-width: 1400px) {
+      font-size: 4em;
+    }
+  
+    @media screen and (max-width: 600px) {
+      font-size: 3em;
+    }
+
   }
 
   img {

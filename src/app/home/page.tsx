@@ -9,7 +9,7 @@ const menuItems = [
     { title: 'Blog', url: '/blog' },
     { title: 'Code Examples', url: 'https://github.com/8bitAlex/alex-salerno-portfolio'},
     { title: 'Alderman RPG', url: 'https://aldermanrpg.com/'},
-    { title: 'Pixelated Realms', url: 'https://www.pixelatedrealms.org/'}
+    { title: 'Pixelated Realms Podcast', url: 'https://www.pixelatedrealms.org/'}
 ]
 
 export default function Page() {
@@ -34,7 +34,7 @@ export default function Page() {
 
 const style: CSSProperties = {
     padding: '16px',
-    marginBottom: '96px'
+    paddingBottom: '96px'
 }
 
 const lowerRight: CSSProperties = {
