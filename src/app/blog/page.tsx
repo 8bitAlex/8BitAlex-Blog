@@ -32,7 +32,9 @@ function getPosts(): PostType[] {
     const postsDirectory = path.join(process.cwd(), 'posts')
     const posts = fs.readdirSync(postsDirectory, { withFileTypes: true }).filter(value => value.name.endsWith(".md"))
 
-    return posts.map(({ name }) => {
+    return posts.filter(({name}) => {
+        return !name.toLowerCase().startsWith("draft")
+    }).map(({ name }) => {
         const slug = name
             .replace(/^.*[\\\/]/, "")
             .split(".")
