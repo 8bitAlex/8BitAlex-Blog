@@ -1,12 +1,12 @@
 1:HL["/_next/static/css/b810012ce02a0a0b.css",{"as":"style"}]
-0:["hrYTLEkTCpjhWGH-4UeSm",[[["",{"children":["blog",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/b810012ce02a0a0b.css","precedence":"next"}]],["$L3",null]]]]]
-4:HL["/_next/static/css/e469cf99f1be6d39.css",{"as":"style"}]
-5:I{"id":9180,"chunks":["272:static/chunks/webpack-2fad26f4edd65f31.js","253:static/chunks/bce60fc1-435f594454b2adeb.js","698:static/chunks/698-d965de98b92b8721.js"],"name":"default","async":false}
-6:I{"id":2306,"chunks":["272:static/chunks/webpack-2fad26f4edd65f31.js","253:static/chunks/bce60fc1-435f594454b2adeb.js","698:static/chunks/698-d965de98b92b8721.js"],"name":"default","async":false}
+0:["eESs-eVGtyfVIc7u4TgV5",[[["",{"children":["blog",{"children":["__PAGE__",{}]}]},"$undefined","$undefined",true],"$L2",[[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/b810012ce02a0a0b.css","precedence":"next"}]],["$L3",null]]]]]
+4:HL["/_next/static/css/ecb2ca72eb18a3d4.css",{"as":"style"}]
+5:I{"id":9180,"chunks":["272:static/chunks/webpack-d940c66d5d26b302.js","253:static/chunks/bce60fc1-435f594454b2adeb.js","698:static/chunks/698-d965de98b92b8721.js"],"name":"default","async":false}
+6:I{"id":2306,"chunks":["272:static/chunks/webpack-d940c66d5d26b302.js","253:static/chunks/bce60fc1-435f594454b2adeb.js","698:static/chunks/698-d965de98b92b8721.js"],"name":"default","async":false}
 7:I{"id":6028,"chunks":["957:static/chunks/59925f94-9603784e19080a41.js","610:static/chunks/610-2df8f515021d15ca.js","308:static/chunks/app/blog/[slug]/page-d572945e8603221f.js"],"name":"","async":false}
 8:I{"id":7098,"chunks":["957:static/chunks/59925f94-9603784e19080a41.js","610:static/chunks/610-2df8f515021d15ca.js","404:static/chunks/app/blog/page-038e420f4defa476.js"],"name":"","async":false}
-9:T13aa,
-# Introduction
+9:T13b5,
+## Introduction
 
 Welcome, Game Masters and Players, to Alderman RPG – the definitive toolkit for tabletop RPGs. Alderman RPG is designed to offer a range of free tools that seamlessly enhance your adventures.
 
@@ -15,9 +15,9 @@ Key features:
 - Create and manage custom Loot & Loot Tables
 - Share your Loot & Loot Tables with others
 
-# Concepts
+## Concepts
 
-## Loot
+### Loot
 
 Loot refers to the virtual items, treasures, or rewards that players can obtain, create, manage, and share within the game. These can range from weapons and armor to magical artifacts and gold, enhancing the depth and excitement of gameplay.
 
@@ -41,7 +41,7 @@ the staff vanishes in a flash of light, lost forever.
 Alderman RPG Example
 
 
-## Loot Tables
+### Loot Tables
 
 A Loot Table is a predefined list or set of Loot from which the game system randomly selects when determining what loot players receive. This allows for variability and surprise in the items players might obtain during their adventures.
 
@@ -62,9 +62,9 @@ A Loot Table is a predefined list or set of Loot from which the game system rand
 
 Alderman RPG Example
 
-# Step-by-Step Instructions
+## Step-by-Step Instructions
 
-## Registering an Account
+### Registering an Account
 
 Some features require a registered account. To register a new account, navigate to `Login` in the top right corner.
 
@@ -74,7 +74,7 @@ Enter your `email`, `password`, and `confirm you password`.
 
 Select `Create Account`.
 
-## Roll for Loot & Treasure
+### Roll for Loot & Treasure
 
 Rolling for Loot is an exciting experience and very easy in Alderman RPG.
 
@@ -86,7 +86,7 @@ With a Loot Table selected, click `Roll`. Behold your loot!
 
 If you would like to customize your Loot or Loot Tables see sections [Manage Loot](#Manage-Loot) and [Manage Loot Tables](#Manage-Loot-Tables)
 
-## Manage Loot
+### Manage Loot
 
 In Alderman RPG you can manage, create, and customize Loot.
 
@@ -102,7 +102,7 @@ If you want to create new Loot, select `Create Loot` in the upper right of the p
 
 If the Loot has a red and white Alderman A next to the name then this is predefined system Loot and cannot be modified.
 
-## Manage Loot Tables
+### Manage Loot Tables
 
 In Alderman RPG you can manage, create, and customize Loot Tables.
 
@@ -118,17 +118,17 @@ If you want to create new Loot Table, select `Create Loot Table` in the upper ri
 
 If the Loot Table has a red and white Alderman A next to the name then this is predefined system Loot and cannot be modified.
 
-# FAQs
+## FAQs
 
 ### How is rolling Loot calculated?
 
-details coming coon
+details coming soon
 
-# Contact/Support Information
+## Contact/Support Information
 
 If you have any issues or need support please contact us at support@aldermanrpg.com
 
 If you have any feedback or comments you can fill out our [survey](https://docs.google.com/forms/d/e/1FAIpQLSfI5ce9LxDmKg9LrroBnIeBQ7KXteqAZoaXide-nX0LPYuZgg/viewform?usp:sf_link)
 
-You can find our feature roadmap and future planning on our [trello board](https://trello.com/b/v8tttbl7/alderman-app-roadmap)2:[["$","html",null,{"lang":"en","children":[["$","head",null,{}],["$","body",null,{"children":["$","$L5",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L6",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":[["$","div",null,{"className":"blog-content","children":["$","$L5",null,{"parallelRouterKey":"children","segmentPath":["children","blog","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L6",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":[["$","div",null,{"children":[["$","$L7",null,{"to":"/home","children":"Home"}],["$","div",null,{"className":"grid","style":{"marginTop":"8px"},"children":[["$","$L8",null,{"post":{"slug":"alderman-how-it-works","frontmatter":{"title":"How Alderman RPG Works: A Step-by-Step Guide","date":"2023-10-20","updated":"2023-10-20","image":"","tagline":"A guide to Alderman RPG and How it works","tags":["Alderman-RPG","Tutorial"]},"content":"$9"}}],["$","$L8",null,{"post":{"slug":"alderman-rolling-loot-details","frontmatter":{},"content":""}}]]}]]}],null],"segment":"__PAGE__"},"styles":[]}]}],null],"segment":"blog"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/e469cf99f1be6d39.css","precedence":"next"}]]}]}]]}],null]
+You can find our feature roadmap and future planning on our [trello board](https://trello.com/b/v8tttbl7/alderman-app-roadmap)2:[["$","html",null,{"lang":"en","children":[["$","head",null,{}],["$","body",null,{"children":["$","$L5",null,{"parallelRouterKey":"children","segmentPath":["children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L6",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":[["$","div",null,{"className":"blog-content","children":["$","$L5",null,{"parallelRouterKey":"children","segmentPath":["children","blog","children"],"error":"$undefined","errorStyles":"$undefined","loading":"$undefined","loadingStyles":"$undefined","hasLoading":false,"template":["$","$L6",null,{}],"templateStyles":"$undefined","notFound":"$undefined","notFoundStyles":"$undefined","childProp":{"current":[["$","div",null,{"children":[["$","$L7",null,{"to":"/home","children":"Home"}],["$","div",null,{"className":"grid","style":{"marginTop":"8px"},"children":[["$","$L8",null,{"post":{"slug":"alderman-how-it-works","frontmatter":{"title":"How Alderman RPG Works: A Step-by-Step Guide","date":"2023-10-20","updated":"2023-10-20","image":"","tagline":"A guide to Alderman RPG and How it works","tags":["Alderman-RPG","Tutorial"]},"content":"$9"}}]]}]]}],null],"segment":"__PAGE__"},"styles":[]}]}],null],"segment":"blog"},"styles":[["$","link","0",{"rel":"stylesheet","href":"/_next/static/css/ecb2ca72eb18a3d4.css","precedence":"next"}]]}]}]]}],null]
 3:[["$","meta","0",{"charSet":"utf-8"}],["$","title","1",{"children":"Alex's Blog"}],["$","meta","2",{"name":"viewport","content":"width=device-width, initial-scale=1"}],["$","link","3",{"rel":"icon","href":"/favicon.ico","type":"image/x-icon","sizes":"any"}]]
