@@ -3,6 +3,7 @@ import path from "path"
 import fs from "fs"
 import BackButton from "@/components/BackButton"
 import { ReactMarkdown } from "react-markdown/lib/react-markdown"
+import remarkGfm from 'remark-gfm'
 
 type IProps = {
   params: {
@@ -21,7 +22,7 @@ export default function Page({ params }: IProps) {
         <h3>{post.frontmatter.tagline}</h3>
         <h4>By Alex Salerno | {date.toLocaleDateString()}</h4>
         <hr /><br />
-        <ReactMarkdown>{post.content.trim()}</ReactMarkdown>
+        <ReactMarkdown remarkPlugins={[remarkGfm]}>{post.content.trim()}</ReactMarkdown>
         <h4>Tags: {post.frontmatter.tag}</h4>
       </div>
     </div>
