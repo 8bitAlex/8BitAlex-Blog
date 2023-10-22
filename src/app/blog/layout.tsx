@@ -12,7 +12,7 @@ export default function BlogLayout({
   children: React.ReactNode
 }) {
   return (
-    <div className="blog-content">
+    <div id='blog' className="blog-content">
         {children}
     </div>
   )
