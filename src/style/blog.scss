@@ -21,6 +21,12 @@ hr {
     border: 0.5px solid rgb(255,255,255,0.1);
 }
 
+h1 {
+    font-size: 3rem;
+    border-bottom: 1px solid rgb(255,255,255,0.1);
+    padding-bottom: 5px;
+}
+
 h2 {
     font-size: 3rem;
 }
@@ -38,4 +44,9 @@ blockquote {
 
 td {
     padding-right: 8px;
+}
+
+img {
+    margin: auto;
+    display: block;
 }

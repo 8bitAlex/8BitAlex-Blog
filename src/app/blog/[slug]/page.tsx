@@ -14,16 +14,21 @@ type IProps = {
 export default function Page({ params }: IProps) {
   const post = getPost(params.slug)
   const date = new Date(post.frontmatter.date)
+  const updated = new Date(post.frontmatter.updated)
+  const tags = post.frontmatter.tags.map((tag: string, index: number) => {
+    return index == post.frontmatter.tags.length - 1 ? tag : tag + ", "
+  })
+
   return (
     <div style={{ textAlign: 'left' }}>
       <BackButton to={'/blog'}>Back</BackButton>
       <div style={{paddingLeft:'32px', paddingRight:'32px'}}>
         <h2>{post.frontmatter.title}</h2>
         <h3>{post.frontmatter.tagline}</h3>
-        <h4>By Alex Salerno | {date.toLocaleDateString()}</h4>
+        <h4>By Alex Salerno | {date.toLocaleDateString()} | Updated: {updated.toLocaleDateString()}</h4>
         <hr /><br />
         <ReactMarkdown remarkPlugins={[remarkGfm]}>{post.content.trim()}</ReactMarkdown>
-        <h4>Tags: {post.frontmatter.tag}</h4>
+        <h4>Tags: {tags}</h4>
       </div>
     </div>
   )

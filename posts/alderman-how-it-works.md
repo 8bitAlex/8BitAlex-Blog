@@ -1,13 +1,13 @@
 ---
 title: 'How Alderman RPG Works: A Step-by-Step Guide'
-date: '2023-10-20'
-updated: '2023-10-20'
+date: '20 Oct 2023 12:00:00 PST'
+updated: '21 Oct 2023 12:00:00 PST'
 image: ''
 tagline: "A guide to Alderman RPG and How it works"
 tags: ["Alderman-RPG", "Tutorial"]
 ---
 
-## Introduction
+# Introduction
 
 Welcome, Game Masters and Players, to Alderman RPG – the definitive toolkit for tabletop RPGs. Alderman RPG is designed to offer a range of free tools that seamlessly enhance your adventures.
 
@@ -16,33 +16,32 @@ Key features:
 - Create and manage custom Loot & Loot Tables
 - Share your Loot & Loot Tables with others
 
-## Concepts
+# Concepts
 
-### Loot
+## Loot
 
 Loot refers to the virtual items, treasures, or rewards that players can obtain, create, manage, and share within the game. These can range from weapons and armor to magical artifacts and gold, enhancing the depth and excitement of gameplay.
 
 *D&D 5e Example*
 
-> **Staff of Healing**
+> **Bag of Holding**
 >
-> *Staff, rare (requires attunement by a bard, cleric, or
-druid)*
+> *Wondrous item, uncommon*
 >
-> This staff has 10 charges. While holding it, you can use
-an action to expend 1 or more of its charges to cast one
-of the following spells from it, using your spell save DC
-and spellcasting ability modifier: cure wounds (1 charge
-per spell level, up to 4th), lesser restoration (2 charges).
-or mass cure wounds (5 charges).
-The staff regains 1d6 + 4 expended charges daily at
-dawn. If you expend the last charge, roll a d20. On a 1.
-the staff vanishes in a flash of light, lost forever.
+> This bag has an interior space considerably larger
+than its outside dimensions, roughly 2 feet in diameter
+at the mouth and 4 feet deep. The bag can hold up to
+500 pounds, not exceeding a volume of 64 cubic feet.
+The bag weighs 15 pounds, regardless of its contents.
+Retrieving an item from the bag requires an action.
+>
+> ...
 
-Alderman RPG Example
+*Alderman RPG Example*
 
+![Bag of Holding Loot from Alderman RPG](../img/posts/alderman-host-it-works/BagOfHolding.png)
 
-### Loot Tables
+## Loot Tables
 
 A Loot Table is a predefined list or set of Loot from which the game system randomly selects when determining what loot players receive. This allows for variability and surprise in the items players might obtain during their adventures.
 
@@ -61,11 +60,13 @@ A Loot Table is a predefined list or set of Loot from which the game system rand
 > | 99 | Bag of holding |
 > | 00 | Driftglobe |
 
-Alderman RPG Example
+*Alderman RPG Example*
 
-## Step-by-Step Instructions
+![Magic Item Table A Loot Table from Alderman RPG](../img/posts/alderman-host-it-works/LootTable.png)
 
-### Registering an Account
+# Step-by-Step Instructions
+
+## Registering an Account
 
 Some features require a registered account. To register a new account, navigate to `Login` in the top right corner.
 
@@ -75,7 +76,7 @@ Enter your `email`, `password`, and `confirm you password`.
 
 Select `Create Account`.
 
-### Roll for Loot & Treasure
+## Roll for Loot & Treasure
 
 Rolling for Loot is an exciting experience and very easy in Alderman RPG.
 
@@ -87,7 +88,7 @@ With a Loot Table selected, click `Roll`. Behold your loot!
 
 If you would like to customize your Loot or Loot Tables see sections [Manage Loot](#Manage-Loot) and [Manage Loot Tables](#Manage-Loot-Tables)
 
-### Manage Loot
+## Manage Loot
 
 In Alderman RPG you can manage, create, and customize Loot.
 
@@ -103,7 +104,7 @@ If you want to create new Loot, select `Create Loot` in the upper right of the p
 
 If the Loot has a red and white Alderman A next to the name then this is predefined system Loot and cannot be modified.
 
-### Manage Loot Tables
+## Manage Loot Tables
 
 In Alderman RPG you can manage, create, and customize Loot Tables.
 
@@ -119,13 +120,13 @@ If you want to create new Loot Table, select `Create Loot Table` in the upper ri
 
 If the Loot Table has a red and white Alderman A next to the name then this is predefined system Loot and cannot be modified.
 
-## FAQs
+# FAQs
 
-### How is rolling Loot calculated?
+## How is rolling Loot calculated?
 
 details coming soon
 
-## Contact/Support Information
+# Contact/Support Information
 
 If you have any issues or need support please contact us at support@aldermanrpg.com
 
