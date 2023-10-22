@@ -15,7 +15,7 @@ export default function Page({ params }: IProps) {
   const post = getPost(params.slug)
   const date = new Date(post.frontmatter.date)
   const updated = new Date(post.frontmatter.updated)
-  const tags = post.frontmatter.tags.map((tag: string, index: number) => {
+  const tags = post.frontmatter.tags?.map((tag: string, index: number) => {
     return index == post.frontmatter.tags.length - 1 ? tag : tag + ", "
   })
 
